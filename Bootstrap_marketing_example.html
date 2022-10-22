@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="AA13fu3E.png"></script>
+  <script src="AA13fazq.png"></script>
+  <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    
+    /* Add a gray background color and some padding to the footer */
+    footer {
+      background-color: #f2f2f2;
+      padding: 25px;
+    }
+    
+  .carousel-inner img {
+      width: 100%; /* Set width to 100% */
+      margin: auto;
+      min-height:200px;
+  }
+
+  /* Hide the carousel text when the screen is less than 600 pixels wide */
+  @media (max-width: 600px) {
+    .carousel-caption {
+      display: none; 
+    }
+  }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">Logo</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#">國際中心</a></li>
+        <li><a href="#">謝佩蓁</a></li>
+        <li><a href="#">綜合報導</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <img src="AA13fdOH.png" alt="Image">
+        <div class="carousel-caption">
+          <h3>樹大招風！日本最強怨靈菅原道真</h3>
+          <p>國際中心謝佩蓁／綜合報導 - 4 小時前</p>
+        </div>      
+      </div>
+
+      <div class="item">
+        <img src="https://placehold.it/1200x400?text=Another Image Maybe" alt="Image">
+        <div class="carousel-caption">
+          <h3>文采過人，政治之路平步青雲</h3>
+          <p>樹大招風，招來殺身之禍</p>
+        </div>      
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+</div>
+  
+<div class="container text-center">    
+  <h3>「學問之神」－菅原道真</h3><br>
+  <div class="row">
+    <div class="col-sm-4">
+      <img src="AA13fazq.png" class="img-responsive" style="width:100%" alt="Image">
+      <p>他的形象時而溫文儒雅、時而如怒目金剛，亦被稱為「火雷天神」</p>
+    </div>
+    <div class="col-sm-4"> 
+      <img src="AA13fu3E.png" class="img-responsive" style="width:100%" alt="Image">
+      <p>為何有如此天壤之別？這要從他悲壯的一生說起。</p>    
+    </div>
+    <div class="col-sm-4">
+      <div class="well">
+       <p>菅原道真誕生於西元845年、平安時代的文學世家，據聞他5歲時就會吟詠和歌，優異的文學天賦與博學多聞，讓他得以憑著文采在政壇上展露頭角，短短沒幾年就得到宇多天皇注目。當時朝中被外戚藤原氏把持，宇多天皇為了壓制其氣焰，重用道真改革朝政，開啟了著名的「寬平之治」</p>
+      </div>
+      <div class="well">
+       <p>菅原道真的政治遠見不止如此。西元894年被派任為遣唐使時，他斷然拒絕，甚至主張應廢除遣唐使，這在當時的日本是非常重大的國策轉向。因為從奈良時代到平安時代初期，日本非常嚮往唐朝先進的律令治世，當時日本的政治體制、學術、藝文，還有上層貴族的時尚生活等等皆以唐風為上，因此日本政府屢派最重要的官員與各領域的知識份子到中原學習。</p>
+      </div>
+    </div>
+  </div>
+</div><br>
+
+<footer class="container-fluid text-center">
+  <p>含恨而終，化身為最強怨靈</p>
+</footer>
+
+</body>
+</html>

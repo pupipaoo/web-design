@@ -1,0 +1,66 @@
+	<head>
+	<meta charset='utf-8'>
+	<title>地3分</title>
+	<style>
+		#button1{font-size:30px;color:red}
+		#button2{font-size:30px;color:green}
+		.click:hover{color:red}
+		a:link	{color:black}
+		a:visit	{color:green}
+		a:hovor	{color:blue}
+		a:focus	{color:red}
+		a:active	{color:yellow}
+	</style>
+	</head>
+	<body>	
+		<div style='margin:0px auto;width:500'>
+		<form method='post' action=''>
+			<fieldset>
+				<legend>個資</legend>
+				<label>姓名:<input type='text' name='username' size='40'/><label><br>
+				e-mail:<input type='text' name='username' size='40' value='username@mailserve' /><br>
+				性別:
+				<input type='checkbox' name='興趣[]' value='籃球'/>籃球
+				<input type='checkbox' name='興趣[]' value='棒球'/>棒球
+				<input type='checkbox' name='興趣[]' value='桌球'/>桌球
+			</fieldset>
+			<br>
+			輸入米馬:<input type='password' name='userPWD' size='10'/>
+			<input type='submit' value='提交' id='button1'/>
+			<input type='reset' value='重書' id='button2'/>
+			<br>
+			隱藏<input type='hidden' name='author' value='JeanChen'/>
+			<br>
+			上傳黨
+			<input type='file' name='myfile' size='50'/><br>
+			搜尋<input type='search'/></br>
+			網址<input type='url'/></br>
+			電話<input type='tel'/></br>
+			日期<input type='date'/></br>
+			數字<input type='number' min='0' max='10' step='2' /></br>
+			範圍<input type='range' min='0' max='10' step='2'/></br>
+			牛羚:
+			<input type='radio' name='userage' value='age1'>18以上
+			<input type='radio' name='userage' value='age2'>未滿18
+			
+			<br>
+			文字方塊:
+			<textarea cols='45' rows='5'>換螢光玲!</textarea>
+			
+			<br>
+			下拉選單
+			<select>
+				<option>請選擇</option>
+				<optgroup label='不可攜帶'>
+					<option value='電腦'>電腦</option>
+				<optgroup label='可攜帶'>
+					<option value='平板'>平板</option>
+					<option value='手機'>手機</option>
+			</select>
+			<input type='submit'>
+			<br>
+			<input type='submit' value='提交' class='click'>
+			<input type='reset' value='重新輸入'>
+		</form>
+		<li><a href='https://www.youtube.com'>優吐</a></li>
+	</body>
