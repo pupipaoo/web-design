@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+</head>
+<body>
+    <input id="Button1" type="button" onclick="return Button1_click()" value="button" />
+    <div id="div1">
+        Div1<br />
+        Div1<br />
+        Div1<br />
+        Div1<br />
+    </div>
+    <hr />
+    <input id="Button2" type="button" value="button" />
+    <div id="div2">
+        Div2<br />
+        Div2<br />
+        Div2<br />
+        Div2<br />
+    </div>
+
+    <script src="Scripts/jquery-1.11.1.min.js"></script>
+    <script>
+        function Button1_click() {
+            var div1 = document.getElementById('div1');
+            if (div1.style.display == '') {
+                div1.style.display = 'none';
+            }
+            else {
+                div1.style.display = '';
+            }
+        }
+
+        $(document).ready(function () {
+            $('#Button2').click(function () {
+                $('#div2').toggle();
+            });
+        });
+    </script>
+</body>
+</html>

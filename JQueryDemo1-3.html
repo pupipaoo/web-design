@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <style>
+        .d1 {
+            background-color: blue;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <input id="btn1" type="button" value="改變div1" />
+    <input id="btn2" type="button" value="改變所有div" />
+	<input id="btn3" type="button" value="取消改變div1" />
+    
+	<div id="div1">
+        
+    </div>
+	<p>div1-1</p>
+    <p>div1-2</p>
+    <p>div1-3</p>
+    <br />
+    <div id="div2">
+        div2<br />
+        div2<br />
+        div2<br />
+    </div>
+    <br />
+    <div id="div3">
+        div3<br />
+        div3<br />
+        div3<br />
+    </div>
+    <script src="Scripts/jquery-1.11.1.min.js"></script>
+    <script>
+        $(function () {
+            $('#btn1').click(function () {
+                $('#div1~p').addClass('d1');
+            });
+            $('#btn2').click(function () {
+                $('div').addClass('d1');
+            });
+			$('#btn3').click(function () {
+                $('#div1~p').removeClass('d1');
+            });
+        });
+    </script>
+</body>
+</html>

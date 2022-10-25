@@ -1,0 +1,31 @@
+<!doctype html>
+<html>	
+	<head>
+		<meta charset='utf-8'>
+		<script>
+			function openDocument()
+			{
+				window.document.open("text/html");
+				window.document.write("這是新聞見");
+				window.document.close();
+			}
+			function showMsg()
+			{
+				var msg=document.getElementById('message')
+				var x = prompt('請輸入姓')
+				msg.innerHTML=x+'hello world';
+			}
+		</script>
+	</head>	
+	<body>
+	<input type='button' value='開啟新聞見'
+		onclick='javascript:openDocument();'>
+	<input type='button' value='輸名'
+		onclick='javascript:showMsg();'>
+	<p id='message'></p>
+	<input type='button' value='重載'
+		onclick='javascript:window.location.reload();'>
+	<input type='button' value='導向雅虎'
+		onclick="javascript:window.location.replace('http://tw.yahoo.com');">
+	</body>	
+</html>

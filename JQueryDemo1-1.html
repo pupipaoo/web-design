@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+</head>
+<body>
+    <form action="" id="form1" name="form1" method="post">
+        <input type="text" id="Text1"  name="Text1" value="我是Text1" />
+        <hr />
+        <input type="button" id="btn1" name="btn1" onclick="btn1_onclick()" value="傳統的做法" />
+        <br />
+        <input type="button" id="btn2" name="btn2" onclick="btn2_onclick()" value="經簡一點的做法" />
+        <br />
+        <input type="button" id="btn3" name="btn3" value="jQuery的做法" />
+    </form>
+
+    <script src="Scripts/jquery-1.11.1.min.js"></script>
+    <script>
+        //傳統的做法
+        function btn1_onclick() {
+            window.document.form1.Text1.value = 'ABC';
+        }
+
+        //稍為精簡的做法
+        function btn2_onclick() {
+
+            document.getElementById('Text1').value = 'ABC';
+
+            //IE Only
+            //window.document.all('Text1').value = 'ABC';
+        }
+
+        //jQuery的做法
+        $(function () {
+            $('#btn3').click(function () {
+                $('#Text1').val('ABC');
+            });
+        });
+
+    </script>
+</body>
+</html>
