@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+</head>
+<body>
+    <form action="" method="post" id="form1" name="form1">
+        <input type="text" id="txt1" /><br />
+        <input id="btn1" type="button" value="GetRSS" /><br />
+        <textarea id="ta1" rows="2" cols="20">
+
+        </textarea>
+    </form>
+
+
+
+    <script src="Scripts/jquery-1.11.1.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#btn1').click(function () {
+                var rssurl = $('#txt1').val();
+                $.get(rssurl, function (data) {
+                    $('#ta1').text(data);
+                    //var $xml = $(data);
+                    //$xml.find("item").each(function () {
+                    //    var $this = $(this),
+                    //        item = {
+                    //            title: $this.find("title").text(),
+                    //            link: $this.find("link").text(),
+                    //            description: $this.find("description").text(),
+                    //            pubDate: $this.find("pubDate").text(),
+                    //            author: $this.find("author").text()
+                    //        }
+                    //    //Do something with item here...
+                    //});
+                });
+            });
+
+        });
+    </script>
+</body>
+</html>
